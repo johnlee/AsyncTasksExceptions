@@ -1,0 +1,11 @@
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/bin/Debug/netcoreapp3.0/DotnetAsync3
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/bin/Debug/netcoreapp3.0/DotnetAsync3.deps.json
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/bin/Debug/netcoreapp3.0/DotnetAsync3.runtimeconfig.json
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/bin/Debug/netcoreapp3.0/DotnetAsync3.runtimeconfig.dev.json
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/bin/Debug/netcoreapp3.0/DotnetAsync3.dll
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/bin/Debug/netcoreapp3.0/DotnetAsync3.pdb
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/obj/Debug/netcoreapp3.0/DotnetAsync3.csprojAssemblyReference.cache
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/obj/Debug/netcoreapp3.0/DotnetAsync3.AssemblyInfoInputs.cache
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/obj/Debug/netcoreapp3.0/DotnetAsync3.AssemblyInfo.cs
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/obj/Debug/netcoreapp3.0/DotnetAsync3.dll
+/Users/lee1048/Projects/SmartWorks/DotnetAsync3/obj/Debug/netcoreapp3.0/DotnetAsync3.pdb
