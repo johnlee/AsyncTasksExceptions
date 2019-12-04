@@ -12,7 +12,27 @@ namespace DotnetAsync3
             watch.Start();
 
             //Example1(watch);
-            Example2(watch);
+            //Example2(watch);
+
+            try
+            {
+                var task1 = RunAsync3s(watch);
+                var task2 = RunAsync7s(watch);
+                var task3 = RunAsync10s(watch);
+                Task.WaitAll(task1, task2, task3);
+            }
+            catch (AggregateException ae)
+            {
+                string errors = string.Empty;
+
+                foreach (var e in ae.InnerExceptions)
+                {
+                    errors += e.Message;
+                }
+
+                //Console.WriteLine($"ERRORS! {errors}");
+                throw new Exception($"Error in Tasks! {errors}");
+            }
 
             watch.Stop();
             Console.Read();
@@ -65,7 +85,12 @@ namespace DotnetAsync3
         public static async Task<string> RunAsync7s(Stopwatch watch)
         {
             Console.WriteLine($"RunAsync7s Start!: {watch.Elapsed}");
-            await Task.Delay(7000);
+
+            // await Task.Delay(7000);
+            // Simulate exception here
+            await Task.Delay(1000);
+            throw new Exception("This is a test!");
+
             Console.WriteLine($"RunAsync7s Done!: {watch.Elapsed}");
             return "7s Done!";
         }
