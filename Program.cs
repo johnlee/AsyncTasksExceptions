@@ -33,10 +33,17 @@ namespace DotnetAsync3
         public static void Example2(Stopwatch watch)
         {
             Console.WriteLine($"Example3 Start!: {watch.Elapsed}");
+
+            Console.WriteLine("PRESTART");
+            var task4 = RunAsync3s(watch);
+            Task.WaitAll(task4);
+            Console.WriteLine("PREEND " + task4.Result);
+
             var task1 = RunAsync10s(watch);
             var task2 = RunAsync7s(watch);
             var task3 = RunAsync3s(watch);
             Task.WaitAll(task1, task2, task3);
+            
             var result1 = task1.Result;
             var result2 = task2.Result;
             var result3 = task3.Result;
